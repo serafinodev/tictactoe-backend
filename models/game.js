@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const roundSchema = new mongoose.Schema({
-  winner: { type: String, enum: ["Player 1", "Player 2", "Draw"], required: true },
+  winner: { type: String, required: true }, // 🔥 removed enum
 }, { _id: false });
 
 const gameSchema = new mongoose.Schema({
